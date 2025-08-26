@@ -840,6 +840,7 @@ timerStopped = false;
             maxTime = self.card.time_limit() / 1000
         else:
             maxTime = 0
+        self._remaining()
         self.bottom.web.eval("_showQuestion(%s,%d);" % ("", maxTime))
 
     def _showEaseButtons(self) -> None:
