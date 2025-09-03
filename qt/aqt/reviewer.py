@@ -1232,6 +1232,7 @@ timerStopped = false;
     onMark = toggle_mark_on_current_note
     setFlag = set_flag_on_current_card
 
+
 class SvelteReviewer(Reviewer):
     def _answerButtons(self) -> str:
         default = self._defaultEase()
