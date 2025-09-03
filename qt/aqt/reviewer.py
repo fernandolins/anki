@@ -1279,6 +1279,7 @@ class SvelteReviewer(Reviewer):
 
     def _linkHandler(self, url: str) -> None:
         if url == "bottomReady":
+            self._showQuestion()
             self._remaining()
             return
         super()._linkHandler(url)
