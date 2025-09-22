@@ -1275,7 +1275,7 @@ class SvelteReviewer(Reviewer):
         else:
             maxTime = 0
         self._remaining()
-        self.bottom.web.eval("_showQuestion(%s,%d);" % ("", maxTime))
+        self.bottom.web.eval("showQuestion(\"\",%d);" % (maxTime))
 
     def _linkHandler(self, url: str) -> None:
         if url == "bottomReady":
